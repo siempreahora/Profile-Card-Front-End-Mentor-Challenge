@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ********************************** */
+/* GENERIC/REUSABLE STUFF */
+/* ********************************** */
+
+.grid-container {
+  display: grid;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--250 {
+  width: 250px;
+}
+
+.grid--center {
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.grid--row-gap-sm {
+  row-gap: 0.4rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+/* ********************************** */
+/* MAIN BODY */
+/* ********************************** */
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.pattern-top {
+  position: fixed;
+  bottom: 30rem;
+  left: -10rem;
+}
+
+.pattern-bottom {
+  position: fixed;
+  top: 30rem;
+  right: -10rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 325px;
+  margin: 0 auto;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-bg {
+  margin-bottom: 4.2rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.victor-icon {
+  border-radius: 50%;
+  position: absolute;
+  top: 4.7rem;
+  border: 5px solid white;
+}
+
+.victor-name {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.span-age {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.location {
+  color: hsl(227, 10%, 46%);
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.div-line {
+  color: hsla(0, 0%, 93%, 0.26);
+  margin-bottom: 1.2rem;
+}
+
+.social-nums {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.social-text {
+  font-weight: 400;
+  font-size: 0.55rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 1.2px;
+  margin-bottom: 1.4rem;
+}
+
+/* ********************************** */
+/* FRONT-END MENTOR STUFF */
+/* ********************************** */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
